@@ -1,8 +1,2 @@
-# Write a PYTHON program to check a year for leap year.
-
-year = int(input("Enter year: "))
-
-if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
-    print("Leap Year")
-else:
-    print("Not a Leap Year")
+a = [1, 2, 3, 4, 5, 6]
+print(list(filter(lambda x: x % 2 == 0, a)))

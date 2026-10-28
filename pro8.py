@@ -1,8 +1,3 @@
-# Write a PYTHON program to check whether number is even or odd.
-
-n = int(input("Enter a number: "))
-
-if n % 2 == 0:
-    print("Number is Even")
-else:
-    print("Number is Odd")
+a = [1, 2, 3]
+b = [4, 5, 6]
+print(list(map(lambda x, y: x + y, a, b)))

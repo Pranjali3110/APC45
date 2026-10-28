@@ -1,4 +1,2 @@
-def average(a):
-    return sum(a) / len(a)
-
-print(average([10, 20, 30]))
+a = ["apple", "banana", "orange", "cat"]
+print(list(filter(lambda x: len(x) > 5, a)))
