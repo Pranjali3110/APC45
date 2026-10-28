@@ -1,11 +1,4 @@
-# Q8. Write a PYTHON program to produce following design.
-# A B C
-# A B C
-# A B C
+def power(base, exponent):
+    return base ** exponent
 
-n = int(input("Enter n: "))
-
-for i in range(n):
-    for j in range(3):
-        print(chr(65 + j), end=" ")
-    print()
+print(power(2, 3))

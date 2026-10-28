@@ -1,14 +1,8 @@
-# Q10. Write a PYTHON program to produce following design.
-# A B C D E
-# A B C D
-# A B C
-# A B
-# A
-# If user enters n value as 5.
+def count_vowels(s):
+    count = 0
+    for ch in s.lower():
+        if ch in "aeiou":
+            count += 1
+    return count
 
-n = int(input("Enter n: "))
-
-for i in range(n, 0, -1):
-    for j in range(i):
-        print(chr(65 + j), end=" ")
-    print()
+print(count_vowels("hello"))

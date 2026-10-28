@@ -1,11 +1,4 @@
-source = open("program.py", "r")
-output = open("without_comments.py", "w")
+def unique(a):
+    return list(set(a))
 
-for line in source:
-    if not line.lstrip().startswith("#"):
-        output.write(line)
-
-source.close()
-output.close()
-
-print("Comments removed successfully.")
+print(unique([1, 2, 2, 3, 3]))

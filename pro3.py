@@ -1,6 +1,7 @@
-# Q3. Write a PYTHON program to print odd numbers up to n.
+def greater(a, b):
+    if a > b:
+        return a
+    else:
+        return b
 
-n = int(input("Enter n: "))
-
-for i in range(1, n + 1, 2):
-    print(i)
+print(greater(10, 20))

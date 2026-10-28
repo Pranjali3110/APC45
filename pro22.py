@@ -1,10 +1,7 @@
-with open("file1.txt", "r") as f1:
-    text1 = f1.read()
+def calculate(a):
+    print("Minimum:", min(a))
+    print("Maximum:", max(a))
+    print("Sum:", sum(a))
+    print("Average:", sum(a) / len(a))
 
-with open("file2.txt", "r") as f2:
-    text2 = f2.read()
-
-with open("combined.txt", "w") as f3:
-    f3.write(text1 + "\n" + text2)
-
-print("Files combined successfully.")
+calculate([10, 20, 30, 40])

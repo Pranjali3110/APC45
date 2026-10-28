@@ -1,9 +1,5 @@
-f = open("student.txt", "r")
-text = f.read()
-f.close()
+def second_largest(a):
+    a = sorted(set(a))
+    return a[-2]
 
-f = open("uppercase.txt", "w")
-f.write(text.upper())
-f.close()
-
-print("Uppercase file created.")
+print(second_largest([10, 20, 30, 40]))
