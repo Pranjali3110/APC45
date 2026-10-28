@@ -1,8 +1,7 @@
-def factorial(n):
-    fact = 1
-    for i in range(1, n + 1):
-        fact *= i
-    return fact
+#Write a PYTHON program that reads a value of n and check the number is zero or non zero value.
 
-n = int(input("Enter number: "))
-print(factorial(n))
+n = int(input("Enter a number: "))
+if n == 0:
+    print("The number is Zero")
+else:
+    print("The number is Non-Zero") 

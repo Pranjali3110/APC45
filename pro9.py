@@ -1,8 +1,8 @@
-def largest(a):
-    big = a[0]
-    for i in a:
-        if i > big:
-            big = i
-    return big
+# Write a PYTHON program to check a year for leap year.
 
-print(largest([10, 25, 5, 40, 15]))
+year = int(input("Enter year: "))
+
+if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")

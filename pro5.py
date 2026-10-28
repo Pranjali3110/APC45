@@ -1,10 +1,18 @@
-def is_prime(n):
-    if n < 2:
-        return False
-    for i in range(2, n):
-        if n % i == 0:
-            return False
-    return True
+#Write a PYTHON program to evaluate the student performance
+      #If % is >=90 then Excellent performance
+      #If % is >=80 then  Very Good performance
+      #If % is >=70 then Good performance
+      #If % is >=60 then average performance
+      #else Poor performance
 
-n = int(input("Enter number: "))
-print(is_prime(n))
+per=int(input("Enter the percentage:"))
+if per>=90:
+ print("Excellent performance")
+elif per>=80 & per<90:
+ print("Very Good performance")
+elif per>=70 & per<80:
+ print("Good performance")
+elif per>=60 & per<70:
+ print("Average performance")
+else:
+ print("Poor performance")

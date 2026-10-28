@@ -1,4 +1,8 @@
-def power(base, exponent):
-    return base ** exponent
+# Write a PYTHON program to check whether number is even or odd.
 
-print(power(2, 3))
+n = int(input("Enter a number: "))
+
+if n % 2 == 0:
+    print("Number is Even")
+else:
+    print("Number is Odd")

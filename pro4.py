@@ -1,4 +1,7 @@
-def simple_interest(p, r, t):
-    return (p * r * t) / 100
+#Write a PYTHON program to check entered character is vowel or consonant.
 
-print(simple_interest(1000, 5, 2))
+ch = input("Enter a character: ")
+if ch in ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'):
+    print("Vowel")
+else:
+    print("Consonant")

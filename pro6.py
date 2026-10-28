@@ -1,5 +1,12 @@
-def area(r):
-    return 3.14 * r * r
+# Write a PYTHON program to find largest of three numbers.
 
-r = float(input("Enter radius: "))
-print(area(r))
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    print("Largest number is:", a)
+elif b >= a and b >= c:
+    print("Largest number is:", b)
+else:
+    print("Largest number is:", c)

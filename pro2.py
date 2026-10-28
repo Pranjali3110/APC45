@@ -1,8 +1,8 @@
-def check_even_odd(n):
-    if n % 2 == 0:
-        print("Even")
-    else:
-        print("Odd")
+#Write a PYTHON program to find a largest of two numbers.
 
-n = int(input("Enter number: "))
-check_even_odd(n)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+if a > b:
+    print("Largest number is:", a)
+else:
+    print("Largest number is:", b)
