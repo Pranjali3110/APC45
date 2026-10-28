@@ -1,21 +1,14 @@
-f = open("student.txt", "r")
-data = f.read()
-alphabets = 0
-digits = 0
-spaces = 0
-special = 0
-for ch in data:
-    if ch.isalpha():
-        alphabets += 1
-    elif ch.isdigit():
-        digits += 1
-    elif ch.isspace():
-        spaces += 1
-    else:
-        special += 1
-nprint("Alphabets:", alphabets)
-print("Digits:", digits)
-print("Spaces:", spaces)
-print("Special characters:", special)
+# Q10. Write a PYTHON program to produce following design.
+# A B C D E
+# A B C D
+# A B C
+# A B
+# A
+# If user enters n value as 5.
 
-f.close()
+n = int(input("Enter n: "))
+
+for i in range(n, 0, -1):
+    for j in range(i):
+        print(chr(65 + j), end=" ")
+    print()

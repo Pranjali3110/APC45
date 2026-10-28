@@ -1,14 +1,14 @@
-f = open("student.txt", "r")
-text = f.read().lower()
-f.close()
+# Q12. Write a PYTHON program to produce following design.
+# 1
+# 2 2
+# 3 3 3
+# 4 4 4 4
+# 5 5 5 5 5
+# If user enters n value as 5.
 
-words = text.split()
-frequency = {}
+n = int(input("Enter n: "))
 
-for word in words:
-    word = word.strip(".,!?;:")
-    if word:
-        frequency[word] = frequency.get(word, 0) + 1
-
-print("Word frequency:")
-print(frequency)
+for i in range(1, n + 1):
+    for j in range(i):
+        print(i, end=" ")
+    print()

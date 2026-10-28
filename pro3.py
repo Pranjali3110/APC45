@@ -1,5 +1,6 @@
-f = open("student.txt", "a")
-f.write("College: D.Y. Patil College of Engineering and Technology\n")
-f.write("City: Kolhapur\n")
-f.close()
-print("Information appended successfully.")
+# Q3. Write a PYTHON program to print odd numbers up to n.
+
+n = int(input("Enter n: "))
+
+for i in range(1, n + 1, 2):
+    print(i)

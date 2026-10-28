@@ -1,12 +1,14 @@
-f = open("student.txt", "r")
-text = f.read()
-f.close()
+# Q11. Write a PYTHON program to produce following design.
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+# If user enters n value as 5.
 
-words = text.split()
+n = int(input("Enter n: "))
 
-if words:
-    longest = max(words, key=len)
-    print("Longest word:", longest)
-    print("Length:", len(longest))
-else:
-    print("File is empty.")
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
