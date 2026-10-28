@@ -1,10 +1,13 @@
-# 28. Store scores of a batsman in 10 matches and calculate highest, lowest, total, average, centuries and half-centuries.
+# Q28. Word Frequency Dictionary
+# Count the frequency of every word in a paragraph.
 
-scores = [45, 100, 75, 120, 30, 55, 90, 110, 40, 60]
+paragraph = input("Enter a paragraph: ")
 
-print("Highest:", max(scores))
-print("Lowest:", min(scores))
-print("Total:", sum(scores))
-print("Average:", sum(scores) / 10)
-print("Centuries:", sum(x >= 100 for x in scores))
-print("Half-centuries:", sum(50 <= x < 100 for x in scores))
+words = paragraph.split()
+frequency = {}
+
+for word in words:
+    frequency[word] = frequency.get(word, 0) + 1
+
+for word in frequency:
+    print(word, "=", frequency[word])

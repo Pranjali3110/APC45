@@ -1,14 +1,12 @@
-# 29. Store temperature of 30 days and find hottest, coldest, average, above-average and below-average days.
+# Q29. Sentence Reversal
+# Reverse the order of words in a sentence without changing the words themselves.
+# Example:
+# Input: Python is easy
+# Output: easy is Python
 
-temp = []
+sentence = input("Enter a sentence: ")
 
-for i in range(30):
-    temp.append(float(input("Enter temperature: ")))
+words = sentence.split()
+words.reverse()
 
-avg = sum(temp) / 30
-
-print("Hottest:", max(temp))
-print("Coldest:", min(temp))
-print("Average:", avg)
-print("Above average:", sum(x > avg for x in temp))
-print("Below average:", sum(x < avg for x in temp))
+print("Output:", " ".join(words))
