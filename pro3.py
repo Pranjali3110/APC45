@@ -1,5 +1,8 @@
-# 3. Create a list of colors. Replace the third color with another color and display the updated list.
+# Q3. Write a PYTHON program to print odd numbers up to n.
 
-colors = ["Red", "Blue", "Green", "Yellow"]
-colors[2] = "Pink"
-print("Updated list:", colors)
+n = int(input("Enter n: "))
+
+i = 1
+while i <= n:
+    print(i)
+    i += 2

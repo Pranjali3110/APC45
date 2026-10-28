@@ -1,13 +1,12 @@
-# 5. Create a list of student names. Remove:
-# First student
-# Last student
-# A specific student by name
-# Display the remaining list.
+# Q5. Write a PYTHON program to print sum of odd numbers up to n.
 
-students = ["Pranjali", "Prabha", "Anjali", "Sneha", "Varad"]
+n = int(input("Enter n: "))
 
-students.pop(0)
-students.pop()
-students.remove("Anjali")
+i = 1
+sum = 0
 
-print("Remaining list:", students)
+while i <= n:
+    sum = sum + i
+    i += 2
+
+print("Sum of odd numbers =", sum)

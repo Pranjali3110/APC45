@@ -1,5 +1,16 @@
-# 12. Display all elements present at even index positions.
+# Q12. Write a PYTHON program to check the entered number is palindrome or not.
 
-numbers = [10, 20, 30, 40, 50, 60]
-for i in range(0, len(numbers), 2):
-    print(numbers[i])
+n = int(input("Enter a number: "))
+
+original = n
+reverse = 0
+
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n = n // 10
+
+if original == reverse:
+    print("Palindrome Number")
+else:
+    print("Not a Palindrome Number")

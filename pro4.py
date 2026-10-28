@@ -1,11 +1,12 @@
-# 4. Create a list of numbers. Add:
-# One element at the end
-# One element at the beginning
-# One element at a specified position
-# Display the updated list.
+# Q4. Write a PYTHON program to print sum of natural numbers up to n.
 
-numbers = [10, 20, 30]
-numbers.append(40)
-numbers.insert(0, 5)
-numbers.insert(2, 15)
-print("Updated list:", numbers)
+n = int(input("Enter n: "))
+
+i = 1
+sum = 0
+
+while i <= n:
+    sum = sum + i
+    i += 1
+
+print("Sum =", sum)

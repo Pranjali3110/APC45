@@ -1,13 +1,8 @@
-# 7. Accept 10 numbers from the user and store them in a list.
-# Calculate:
-# Sum
-# Average
+# Q7. Write a PYTHON program to print natural numbers up to n
+# in reverse order.
 
-numbers = []
-for i in range(10):
-    n = int(input("Enter number: "))
-    numbers.append(n)
-total = sum(numbers)
-average = total / 10
-print("Sum:", total)
-print("Average:", average)
+n = int(input("Enter n: "))
+
+while n >= 1:
+    print(n)
+    n -= 1

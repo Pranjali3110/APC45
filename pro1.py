@@ -1,5 +1,8 @@
-# 1. Write a Python program to create a list of five fruits and display the list.
+# Q1. Write a PYTHON program to print the natural numbers up to n.
 
-fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"]
+n = int(input("Enter n: "))
 
-print("Fruits:", fruits)
+i = 1
+while i <= n:
+    print(i)
+    i += 1

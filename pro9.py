@@ -1,8 +1,12 @@
-# 9. Create a list of cities. Ask the user to enter a city name and check whether it exists in the list.
+# Q9. Write a PYTHON program to find a factorial of given number.
 
-cities = ["Sangli", "Mumbai", "Delhi", "Kolhapur", "Pune"]
-city = input("Enter city name: ")
-if city in cities:
-    print("City exists in the list.")
-else:
-    print("City does not exist in the list.")
+n = int(input("Enter a number: "))
+
+fact = 1
+i = 1
+
+while i <= n:
+    fact = fact * i
+    i += 1
+
+print("Factorial =", fact)

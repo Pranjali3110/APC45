@@ -1,9 +1,12 @@
-# 13. Accept 10 numbers and sort them in ascending and descending order.
+# Q13. Write a PYTHON program to reverse the given number.
 
-a = []
-for i in range(10):
-    a.append(int(input("Enter number: ")))
-a.sort()
-print("Ascending:", a)
-a.sort(reverse=True)
-print("Descending:", a)
+n = int(input("Enter a number: "))
+
+reverse = 0
+
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n = n // 10
+
+print("Reverse =", reverse)

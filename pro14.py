@@ -1,5 +1,9 @@
-# 14. Create a list containing duplicate values and display only unique elements.
+# Q14. Write a PYTHON program to print the multiplication table.
 
-a = [1, 2, 2, 3, 4, 4, 5]
-unique = list(set(a))
-print("Unique:", unique)
+n = int(input("Enter a number: "))
+
+i = 1
+
+while i <= 10:
+    print(n, "x", i, "=", n * i)
+    i += 1

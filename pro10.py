@@ -1,7 +1,16 @@
-# 10. Write a program to reverse a list without using the reverse() method.
+# Q10. Write a PYTHON program to check the entered number is prime or not.
 
-numbers = [10, 20, 30, 40, 50]
-reversed_list = []
-for i in range(len(numbers) - 1, -1, -1):
-    reversed_list.append(numbers[i])
-print("Reverse list:", reversed_list)
+n = int(input("Enter a number: "))
+
+i = 2
+count = 0
+
+while i < n:
+    if n % i == 0:
+        count += 1
+    i += 1
+
+if n > 1 and count == 0:
+    print("Prime Number")
+else:
+    print("Not a Prime Number")

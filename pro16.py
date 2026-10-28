@@ -1,9 +1,16 @@
-# 16. Create a nested list storing Student Name, Roll Number and Marks. Display all student details.
+# Q16. Write a PYTHON program to print the smallest of n numbers.
 
-students = [
-    ["Pranjali", 1, 85],
-    ["Prabha", 2, 90],
-    ["Sneha", 3, 88]
-]
-for s in students:
-    print("Name:", s[0], "Roll:", s[1], "Marks:", s[2])
+n = int(input("How many numbers: "))
+
+i = 1
+smallest = None
+
+while i <= n:
+    num = int(input("Enter number: "))
+
+    if smallest is None or num < smallest:
+        smallest = num
+
+    i += 1
+
+print("Smallest number =", smallest)
