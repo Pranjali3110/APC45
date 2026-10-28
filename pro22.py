@@ -1,7 +1,7 @@
-def calculate(a):
-    print("Minimum:", min(a))
-    print("Maximum:", max(a))
-    print("Sum:", sum(a))
-    print("Average:", sum(a) / len(a))
+# 22. Find common elements between two lists.
 
-calculate([10, 20, 30, 40])
+a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]
+
+common = [x for x in a if x in b]
+print(common)

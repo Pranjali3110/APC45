@@ -1,2 +1,5 @@
-students = [("Amit", 80), ("Riya", 95), ("Raj", 70)]
-print(sorted(students, key=lambda x: x[1]))
+# 15. Find the second largest element in a list.
+
+a = [10, 25, 5, 40, 30]
+a.sort()
+print("Second largest:", a[-2])

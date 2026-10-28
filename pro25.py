@@ -1,24 +1,10 @@
-books = {"Python": "Available", "Java": "Available"}
+# 25. Remove all duplicate elements while preserving original order.
 
-def add_book(name):
-    books[name] = "Available"
+a = [1, 2, 2, 3, 1, 4, 3]
+b = []
 
-def issue_book(name):
-    if name in books and books[name] == "Available":
-        books[name] = "Issued"
+for x in a:
+    if x not in b:
+        b.append(x)
 
-def return_book(name):
-    if name in books:
-        books[name] = "Available"
-
-def search_book(name):
-    print(books.get(name, "Not found"))
-
-def display():
-    print(books)
-
-add_book("C")
-issue_book("Python")
-return_book("Python")
-search_book("Java")
-display()
+print(b)

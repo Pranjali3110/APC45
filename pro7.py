@@ -1,2 +1,13 @@
-a = [1, 2, 3, 4]
-print(list(map(lambda x: x ** 3, a)))
+# 7. Accept 10 numbers from the user and store them in a list.
+# Calculate:
+# Sum
+# Average
+
+numbers = []
+for i in range(10):
+    n = int(input("Enter number: "))
+    numbers.append(n)
+total = sum(numbers)
+average = total / 10
+print("Sum:", total)
+print("Average:", average)

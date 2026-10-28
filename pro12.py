@@ -1,2 +1,5 @@
-a = [20, 60, 40, 80, 30]
-print(list(filter(lambda x: x > 50, a)))
+# 12. Display all elements present at even index positions.
+
+numbers = [10, 20, 30, 40, 50, 60]
+for i in range(0, len(numbers), 2):
+    print(numbers[i])

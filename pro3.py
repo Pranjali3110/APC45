@@ -1,2 +1,5 @@
-even = lambda x: x % 2 == 0
-print(even(4))
+# 3. Create a list of colors. Replace the third color with another color and display the updated list.
+
+colors = ["Red", "Blue", "Green", "Yellow"]
+colors[2] = "Pink"
+print("Updated list:", colors)

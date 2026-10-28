@@ -1,6 +1,7 @@
-def bill(price, quantity):
-    total = price * quantity
-    discount = total * 0.10
-    return total - discount
+# 21. Accept two lists and merge them into a single list.
 
-print(bill(100, 5))
+a = [1, 2, 3]
+b = [4, 5, 6]
+
+c = a + b
+print(c)

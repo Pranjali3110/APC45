@@ -1,5 +1,7 @@
-def prime(n):
-    return n > 1 and all(n % i != 0 for i in range(2, n))
+# 10. Write a program to reverse a list without using the reverse() method.
 
-a = [2, 3, 4, 5, 6, 7]
-print(list(filter(lambda x: prime(x), a)))
+numbers = [10, 20, 30, 40, 50]
+reversed_list = []
+for i in range(len(numbers) - 1, -1, -1):
+    reversed_list.append(numbers[i])
+print("Reverse list:", reversed_list)

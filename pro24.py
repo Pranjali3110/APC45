@@ -1,23 +1,6 @@
-balance = 1000
-history = []
+# 24. Rotate a list left by one position and right by one position.
 
-def deposit(amount):
-    global balance
-    balance += amount
-    history.append("Deposited")
+a = [1, 2, 3, 4, 5]
 
-def withdraw(amount):
-    global balance
-    if amount <= balance:
-        balance -= amount
-        history.append("Withdrawn")
-    else:
-        print("Insufficient balance")
-
-def enquiry():
-    print("Balance:", balance)
-
-deposit(500)
-withdraw(200)
-enquiry()
-print(history)
+print("Left:", a[1:] + a[:1])
+print("Right:", a[-1:] + a[:-1])

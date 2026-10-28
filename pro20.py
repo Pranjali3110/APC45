@@ -1,5 +1,8 @@
-words = ["apple", "banana", "cat", "orange"]
+# 20. Create a list of books. Implement add book, search book, remove book, display all books and count total books.
 
-print(list(map(lambda x: len(x), words)))
-print(list(filter(lambda x: len(x) > 5, words)))
-print(sorted(words, key=lambda x: len(x)))
+books = ["Python", "Java", "C++"]
+books.append("HTML")
+print("Search:", "Python" in books)
+books.remove("Java")
+print("Books:", books)
+print("Total books:", len(books))

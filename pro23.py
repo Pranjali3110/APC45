@@ -1,6 +1,6 @@
-def student(name, roll, marks):
-    total = sum(marks)
-    percentage = total / 5
-    print(name, roll, total, percentage)
+# 23. Count the frequency of each element in a list.
 
-student("Amit", 1, [80, 70, 90, 85, 75])
+a = [1, 2, 2, 3, 3, 3]
+
+for x in set(a):
+    print(x, "=", a.count(x))
